@@ -78,7 +78,7 @@ public class Player implements IMotionable{
 	
 	@Override
 	public void right() {
-		
+		position.translate(1, 0);
 	}
 
 	@Override
