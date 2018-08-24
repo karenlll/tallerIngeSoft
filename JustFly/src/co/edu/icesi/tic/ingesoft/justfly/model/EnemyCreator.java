@@ -48,7 +48,10 @@ public class EnemyCreator {
 	 */
 	public Enemy generateRandomEnemy()
 	{
-		return new Enemy(0,0);
+		int posX= (int) Math.random()*30;
+		int posY= (int) Math.random()*25;
+		
+		return new Enemy(posX,posY);
 	}
 	
 }
