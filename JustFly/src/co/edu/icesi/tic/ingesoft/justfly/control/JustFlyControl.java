@@ -1,5 +1,6 @@
 package co.edu.icesi.tic.ingesoft.justfly.control;
 
+import java.awt.RenderingHints.Key;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
@@ -503,7 +504,9 @@ public class JustFlyControl {
 	 */
 	private static int getCodeKeyUp() {
 
-		return -1;
+			
+		
+		return KeyEvent.VK_UP;
 
 	}
 
