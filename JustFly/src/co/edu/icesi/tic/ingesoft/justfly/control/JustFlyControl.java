@@ -286,6 +286,8 @@ public class JustFlyControl {
 	 */
 	private static void changeButtonColorEvent(java.awt.Color color, VisualSettings settings) {
 		
+		settings.setColorButton(color);
+		
 	}
 
 	/**
