@@ -286,6 +286,8 @@ public class JustFlyControl {
 	 */
 	private static void changeButtonColorEvent(java.awt.Color color, VisualSettings settings) {
 		
+		settings.setColorButton(color);
+		
 	}
 
 	/**
@@ -321,7 +323,7 @@ public class JustFlyControl {
 	 *            The unique instance of the visual settings.
 	 */
 	private static void changeButtonFontColorEvent(java.awt.Color color, VisualSettings settings) {
-		
+		settings.setColorButton(color);
 	}
 
 	/**
@@ -342,7 +344,7 @@ public class JustFlyControl {
 	 * @return A random color.
 	 */
 	private static java.awt.Color generateRadomColor() {
-		return new java.awt.Color(0, 0, 0);
+		return new java.awt.Color((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
 	}
 
 	/**
@@ -352,7 +354,11 @@ public class JustFlyControl {
 	 *            The current state of the game settings.
 	 */
 	private static void manageShapesActivation(VisualSettings settings) {
-	
+	if(settings.isActiveShapes()) {
+		settings.setActiveShapes(false);
+	}else {
+		settings.setActiveShapes(true);
+	}
 	}
 
 	/**
