@@ -91,12 +91,16 @@ public class Player implements IMotionable{
 	 */
 	public void up() {
 
+		position.translate(0, -1);
+		
 	}
 	
 	/**
 	 * Method that allows to move to a lower position.
 	 */
 	public void down() {
+		
+		position.translate(0, 1);
 
 	}
 	
