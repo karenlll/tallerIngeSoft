@@ -352,7 +352,11 @@ public class JustFlyControl {
 	 *            The current state of the game settings.
 	 */
 	private static void manageShapesActivation(VisualSettings settings) {
-	
+	if(settings.isActiveShapes()) {
+		settings.setActiveShapes(false);
+	}else {
+		settings.setActiveShapes(true);
+	}
 	}
 
 	/**
