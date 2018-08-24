@@ -542,7 +542,8 @@ public class JustFlyControl {
 	 */
 	private static int getCodeKeyRight() {
 
-		return -1;
+		
+		return KeyEvent.VK_RIGHT;
 
 	}
 
