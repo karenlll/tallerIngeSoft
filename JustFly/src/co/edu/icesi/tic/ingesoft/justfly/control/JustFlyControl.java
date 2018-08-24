@@ -309,7 +309,7 @@ public class JustFlyControl {
 	 *            The unique instance of the visual settings.
 	 */
 	private static void changeCanvasColorEvent(java.awt.Color color, VisualSettings settings) {
-		
+		settings.setColorCanvas(color);
 	}
 
 	/**
