@@ -506,7 +506,7 @@ public class JustFlyControl {
 
 			
 		
-		return KeyEvent.VK_DOWN;
+		return KeyEvent.VK_UP;
 
 	}
 
