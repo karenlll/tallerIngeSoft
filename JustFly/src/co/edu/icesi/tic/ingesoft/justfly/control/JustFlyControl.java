@@ -342,7 +342,7 @@ public class JustFlyControl {
 	 * @return A random color.
 	 */
 	private static java.awt.Color generateRadomColor() {
-		return new java.awt.Color(0, 0, 0);
+		return new java.awt.Color((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
 	}
 
 	/**
