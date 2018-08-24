@@ -321,7 +321,7 @@ public class JustFlyControl {
 	 *            The unique instance of the visual settings.
 	 */
 	private static void changeButtonFontColorEvent(java.awt.Color color, VisualSettings settings) {
-		
+		settings.setColorButton(color);
 	}
 
 	/**
